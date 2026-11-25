@@ -1,0 +1,36 @@
+{
+  "name": "@local/pku-hpc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "北大高性能计算平台（PKU HPC）桥接插件：保持 SSH 登录，提交 Gaussian 作业、查队列、取消、下载日志",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "bridge/hpc_bridge.py",
+    "bridge/hpc_core.py",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

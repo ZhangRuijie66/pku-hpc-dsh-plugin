@@ -1,0 +1,4 @@
+- insert:
+    - id: pku-hpc
+      name: '@local/pku-hpc'
+      config: {}

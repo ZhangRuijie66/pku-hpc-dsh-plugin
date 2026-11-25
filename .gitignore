@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# DSH ops 更新时的占位锁文件（与插件无关的空文件，每次运行都会重新生成）
+.dsh-ops-update-*.lock
+
+# 本机运行时数据（不属于仓库：守护进程端口/token、日志、上次登录的集群与学号）
+*.local.json
+bridge.json
+bridge.log
+last-target.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

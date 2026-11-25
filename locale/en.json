@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PKU HPC Bridge",
+    "description": "Keeps a PKU high-performance computing SSH session alive: log in once with password + OTP in Settings, then submit Gaussian jobs, inspect the queue, cancel jobs, and download logs from chat."
+  }
+}
